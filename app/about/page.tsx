@@ -2,26 +2,40 @@ import DiscordLink from '@/components/Common/DiscordLink';
 import Carousel from '@/components/About/Carousel';
 import { Metadata } from 'next';
 
-export const metadata: Metadata = {
-  title: 'מי אנחנו',
-  description:
-    'אנו מאמינים בשיתוף המידע והידע כדרך לקידום הטכנולוגיה והחדשות. קוד פתוח זו גישה המאפשרת לנו לשתף פעולה בפיתוח תוכנה בצורה פתוחה ושקופה.',
-  openGraph: {
-    title: 'מי אנחנו | מעקף',
-    description:
-      'אנו מאמינים בשיתוף המידע והידע כדרך לקידום הטכנולוגיה והחדשות. קוד פתוח זו גישה המאפשרת לנו לשתף פעולה בפיתוח תוכנה בצורה פתוחה ושקופה.',
-    url: 'https://maakaf-website.vercel.app/about',
-    siteName: 'Maakaf',
-    type: 'website',
-    images: [
-      {
-        url: 'https://maakaf-website.vercel.app/favicon.ico',
-        width: 600,
-        height: 600,
-      },
-    ],
-  },
-};
+import createMetadata from '@/components/utils/createMetadata';
+// import { aboutMetadata } from '@/components/utils/Metadatas-consts';
+import { aboutMetadata } from '@/components/utils/Metadatas-with-base-obj';
+
+// * regular
+// export const metadata: Metadata = {
+//   title: 'מי אנחנו',
+//   description:
+//     'אנו מאמינים בשיתוף המידע והידע כדרך לקידום הטכנולוגיה והחדשות. קוד פתוח זו גישה המאפשרת לנו לשתף פעולה בפיתוח תוכנה בצורה פתוחה ושקופה.',
+//   openGraph: {
+//     title: 'מי אנחנו | מעקף',
+//     description:
+//       'אנו מאמינים בשיתוף המידע והידע כדרך לקידום הטכנולוגיה והחדשות. קוד פתוח זו גישה המאפשרת לנו לשתף פעולה בפיתוח תוכנה בצורה פתוחה ושקופה.',
+//     url: 'https://maakaf-website.vercel.app/about',
+//     siteName: 'Maakaf',
+//     type: 'website',
+//     images: [
+//       {
+//         url: 'https://maakaf-website.vercel.app/favicon.ico',
+//         width: 600,
+//         height: 600,
+//       },
+//     ],
+//   },
+// };
+
+// * With createMetadata function
+// export const metadata: Metadata = createMetadata('AboutPage');
+
+// * With metadata const
+export const metadata: Metadata = aboutMetadata;
+
+// * With metadata base object
+// export const metadata: Metadata = aboutMetadata;
 
 const AboutPage = () => {
   return (

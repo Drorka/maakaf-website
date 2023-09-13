@@ -4,27 +4,34 @@ import BeOurFriends from '@/components/BeOurFriends/BeOurFriends';
 import Paths from '@/components/Paths/Paths';
 import WhatNow from '@/components/Home/WhatNow';
 import MembersPics from '@/components/MembersPics';
+import MetadataObj from '@/components/utils/createMetadata';
+import { Metadata } from 'next';
+import { homeMetadata } from '@/components/utils/Metadatas-consts';
 
-export const metadata = {
-  title: 'דף הבית | מעקף',
-  description:
-    'קהילת מעק"ף - מחפשי עבודה (תורמים) לקוד פתוח, היא קהילת קוד פתוח ישראלית, עבור כל מי שמתעניין בקוד פתוח - ממתחילים ועד מומחים. הצטרפו אלינו!',
-  openGraph: {
-    title: 'קהילת מעקף',
-    description:
-      'קהילת מעק"ף - מחפשי עבודה (תורמים) לקוד פתוח, היא קהילת קוד פתוח ישראלית, עבור כל מי שמתעניין בקוד פתוח - ממתחילים ועד מומחים. הצטרפו אלינו!',
-    url: 'https://maakaf-website.vercel.app/',
-    siteName: 'Maakaf',
-    type: 'website',
-    images: [
-      {
-        url: 'https://maakaf-website.vercel.app/favicon.ico',
-        width: 600,
-        height: 600,
-      },
-    ],
-  },
-};
+// export const metadata = {
+//   title: 'דף הבית | מעקף',
+//   description:
+//     'קהילת מעק"ף - מחפשי עבודה (תורמים) לקוד פתוח, היא קהילת קוד פתוח ישראלית, עבור כל מי שמתעניין בקוד פתוח - ממתחילים ועד מומחים. הצטרפו אלינו!',
+//   openGraph: {
+//     title: 'קהילת מעקף',
+//     description:
+//       'קהילת מעק"ף - מחפשי עבודה (תורמים) לקוד פתוח, היא קהילת קוד פתוח ישראלית, עבור כל מי שמתעניין בקוד פתוח - ממתחילים ועד מומחים. הצטרפו אלינו!',
+//     url: 'https://maakaf-website.vercel.app/',
+//     siteName: 'Maakaf',
+//     type: 'website',
+//     images: [
+//       {
+//         url: 'https://maakaf-website.vercel.app/favicon.ico',
+//         width: 600,
+//         height: 600,
+//       },
+//     ],
+//   },
+// };
+
+// export const metadata: Metadata = MetadataObj('Home');
+
+export const metadata: Metadata = homeMetadata;
 
 export default function Home() {
   return (
