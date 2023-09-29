@@ -13,7 +13,7 @@ const Steps = ({ sectionTitle, stepsContent }: StepsProps) => {
   return (
     <>
       <SectionTitle title={sectionTitle} />
-      <div className="flex flex-col gap-14 mt-8 w-[90vw] mx-auto md:flex-row md:gap-y-4 md:gap-x-0 md:items-center md:justify-between md:flex-wrap md:mx-20">
+      <div className="flex flex-col gap-14 mt-8 mr-4 md:flex-row md:gap-y-4 md:gap-x-0 md:items-center md:justify-between md:flex-wrap md:mx-20">
         {stepsContent.map((step, index) => (
           <div
             key={index}
