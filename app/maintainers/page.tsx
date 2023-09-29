@@ -1,7 +1,6 @@
 import { Metadata } from 'next';
 import MaintainerForm from '@/components/Maintainers/MaintainerForm';
 import QuestionsAnswers from '@/components/Maintainers/QuestionsAnswers';
-// import Steps from '@/components/Maintainers/Steps';
 import StepsSection from '@/components/Maintainers/StepsSection';
 
 export const metadata: Metadata = {

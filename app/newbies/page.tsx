@@ -1,8 +1,7 @@
 import HeroSection from '@/components/Newbies/HeroSection';
 import { Metadata } from 'next';
-import LinksSection from '@/components/Newbies/LinksSection';
-
 import StepsSection from '@/components/Newbies/StepsSection';
+import LinksSection from '@/components/Newbies/LinksSection';
 
 export const metadata: Metadata = {
   title: 'מצטרפים חדשים - Newbies',
