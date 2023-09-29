@@ -2,6 +2,8 @@ import HeroSection from '@/components/Newbies/HeroSection';
 import { Metadata } from 'next';
 import LinksSection from '@/components/Newbies/LinksSection';
 
+import StepsSection from '@/components/Newbies/StepsSection';
+
 export const metadata: Metadata = {
   title: 'מצטרפים חדשים - Newbies',
   description:
@@ -26,7 +28,8 @@ export const metadata: Metadata = {
 const NewbiesPage: React.FC = () => {
   return (
     <>
-      <HeroSection/>
+      <HeroSection />
+      <StepsSection />
       <LinksSection />
     </>
   );
